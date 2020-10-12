@@ -22,4 +22,4 @@ const monologueLines = [
 
 const totalBatteries = batteryBatches.reduce((assembledBatteries, batteryBatches) => assembledBatteries + batteryBatches, 0 )
 
-
+const wordCountMap = monologueLines.reduce((LineIndex, wordCount) => , 0)
