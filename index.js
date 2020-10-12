@@ -20,4 +20,4 @@ const monologueLines = [
 
 
 
-const totalBatteries = batteryBatches.reduce((assembledBatteries, batteryBatches[i]) => assembledBatteries + batteryBatches[i], 0 )
+const totalBatteries = batteryBatches.reduce((assembledBatteries, batteryBatches) => assembledBatteries + batteryBatches, 0 )
