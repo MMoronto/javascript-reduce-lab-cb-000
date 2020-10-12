@@ -23,4 +23,4 @@ function totalBatteries(batchNumbers, assembledBatteries) {
 
 
 
-console.log(batteryBatches.reduce(totalBatteries, 0))
+const = batteryBatches.reduce(totalBatteries, 0)
