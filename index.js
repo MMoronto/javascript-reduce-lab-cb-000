@@ -22,4 +22,14 @@ const monologueLines = [
 
 const totalBatteries = batteryBatches.reduce((assembledBatteries, batteryBatches) => assembledBatteries + batteryBatches, 0 )
 
-const wordCountMap = monologueLines.reduce((totalSentences, wordCount) =>  )
+const wordCountMap = monologueLines.reduce((totalSentences, wordCount) =>  {
+  const wordCount = sentence.split(' ').length;
+  
+  if (!totalSentences[wordCount]) {
+    totalSentences[wordCount] = 0;
+  }
+  
+ totalSentences[wordCount]++;
+  
+  return totalSentences
+})
