@@ -23,13 +23,13 @@ const monologueLines = [
 const totalBatteries = batteryBatches.reduce((assembledBatteries, batteryBatches) => assembledBatteries + batteryBatches, 0 )
 
 const wordCountMap = monologueLines.reduce((wordPerSentence, freq) =>  {
-  const wordCount = sentence.split(' ').length;
+  const wordCount = freq.split(' ').length;
   
-  if (!totalSentences[wordCount]) {
-    totalSentences[wordCount] = 0;
+  if (!wordPerSentence[wordCount]) {
+    wordPerSentence[wordCount] = 0;
   }
   
- totalSentences[wordCount]++;
+ wordPerSentence[wordCount]++;
   
-  return totalSentences
-})
+  return wordPerSentence
+}, {})
